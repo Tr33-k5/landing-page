@@ -1,37 +1,50 @@
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: stretch;
+   margin: 0;
+}
+
 .section {
    padding: 0 10% 0 10%;
 }
 
 .section-header {
-   background-color: gray;
-   height: 65px;
+   background-color: #1f2937;
+   height: 85px;
 }
 
 .navbar {
+   background-color: #1f2937;
    display: flex;
    align-items: center;
 }
 
 .logo-container {
-   font-size: 12px;
+   color: #f9faf8;
+   font-size: 20px;
    display: flex;
    justify-content: flex-start;
    flex: 1 1 30%;
-   color: white;
 }
 
 .links-container {
-   font-size: 10px;
    display: flex;
    justify-content: flex-end;
    gap: 2%;
    flex: 1 1 30%;
-   color: white;
+}
+
+.links-container a{
+   font-size: 18px;
+   text-decoration: none;
+   color: #e5e7eb;
 }
 
 .section-hero {
-   background-color: gray;
-   height: 400px;
+   background-color: #1f2937;
+   height: 500px;
    display: flex;
    flex-direction: row;
    justify-content: center;
@@ -43,18 +56,31 @@
    flex-direction: column;
    justify-content: center;
    align-items: flex-start;
-   gap: 5px;
 }
 
 .hero-text h2,
 .hero-text p,
 .hero-text button {
-   margin: 0;
-   margin-right: 20px;
+   margin: 0 20px 20px 0;
+}
+
+.hero-text h2 {
+   color: #f9faf8;
+   font-size: 48px;
+}
+
+.hero-text  {
+   color: #e5e7eb;
+   font-size: 18px;
 }
 
 button {
+   background-color:#3882f6;
+   color: #f9faf8;
+   font-size: 18px;
+   font-weight: bold;
    padding: 5px 20px;
+   border: 2px solid #f9faf8;
    border-radius: 7px;
 }
 
@@ -70,7 +96,10 @@ button {
 }
 
 .section-info {
-   height: 400px;
+   color: #1f2937;
+   font-size: 36px;
+   font-weight: bolder;
+   height: 500px;
    display:flex;
    flex-direction: column;
    justify-content: center;
@@ -94,17 +123,21 @@ button {
 
 .info-cards div {
    border-radius: 10%;
-   border: solid black;
+   border: 2px solid #3882f6;
    padding: 30%;
 }
 
 .info-cards p {
+   color:#1f2937;
+   font-size: 18px;
+   font-weight: lighter;
    margin: 2%;
    text-align: center;;
 }
 
 .section-quote {
-   height: 400px;
+   background-color: #e5e7eb;
+   height: 500px;
    display: flex;
 }
 
@@ -120,13 +153,28 @@ button {
    margin: 0;
 }
 
+.quote {
+   color: #1f2937;
+   font-size: 36px;
+   font-weight: lighter;
+   font-style: italic;
+}
+
+.author {
+   color: #1f2937;
+   font-size: 18px;
+   font-weight: bold;
+}
+
 .section-signup {
-   height: 400px;
+   height: 500px;
    display: flex;
    justify-content: center;
 }
 
 .signup-container {
+   background-color: #3882f6;
+   color: #f9faf8;
    margin: 10% 0;
    width:100%;
    display: flex;
@@ -138,12 +186,21 @@ button {
 .signup-text *{
    margin: 0;
 }
-/*
-.signup-btn {
 
+.signup-text h2 {
+   font-size: 18px;
+   font-weight: bold;
 }
-*/
+
+.signup-text p {
+   font-size: 18px;
+   font-weight: lighter;
+}
+
 .section-footer {
+   background-color: #1f2937;
+   color: #e5e7eb;
+   font-size: 18px;
    height: 60px;
    text-align: center;
 }
